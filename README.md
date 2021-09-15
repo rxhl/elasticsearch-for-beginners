@@ -43,7 +43,7 @@ Elasticsearch is built for horizontal scaling, storing data on multiple nodes (s
 
 ![](/assets/cluster.png)
 
-Before we go into shards, it's important to know what an Elasticsearch index is. Coming from SQL world, an index can thought of as a Database that contains Types (same as Tables from SQL). The indices, in turn, are stored on shards.
+Before we go into shards, it's important to know what an Elasticsearch index is. Coming from SQL world, an index can thought of as a database table with a single schema. The indices in turn, are stored on shards.
 
 For instance, consider a 1.5TB index that is going to be stored on three nodes. Each of the three nodes would store one-third of the index i.e. 500GB on one shard. Overall, we have three nodes (A, B and C) and three shards(1, 2 and 3).\*
 
